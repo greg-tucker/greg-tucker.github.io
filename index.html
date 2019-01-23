@@ -1,2 +1,37 @@
-<h1>Hello</h1>
-<p>Crazy</p>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="scripts.js"></script>
+    <script>
+    function calculate() {
+        const worth = document.getElementById('worth').value /100;
+        const got = document.getElementById('gotGrade').value;
+        const want = document.getElementById('wantGrade').value;
+        const rest = 1 - worth;
+        console.log(document.getElementById('result'));
+        document.getElementById('result').innerText = "You need " + ((want - (worth * got)) / rest).toFixed(1) + "%";
+    }
+        </script>
+</head>
+<body>
+        <div class="middle-card">
+            <h1>What do I need?</h1>
+            <label>How much your coursework worth?</label>
+            <br />
+            <input type="number" id="worth">
+            <br />
+            <label>What percentage did you get in the coursework?</label>
+            <br />
+            <input type="number" id="gotGrade">
+            <br />
+            <label>What grade do you want?</label>
+            <br />
+            <input type="number" id="wantGrade">
+            <br />
+            <button onclick="calculate()">Calculate :)</button>
+            <br />
+            <p id="result"></p>
+            <br />
+            <p>Only input numbers without percentage sign</p>
+        </div>
+</body>

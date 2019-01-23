@@ -1,0 +1,28 @@
+body {
+    background: #AA3939;
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+.middle-card {
+    margin: 20% 30% 20% 30%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px #D46A6A solid;
+    height: 60%;
+    background: #FFAAAA;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+input {
+    height: 25px;
+    border: none;
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
